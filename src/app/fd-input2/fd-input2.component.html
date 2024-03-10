@@ -1,0 +1,67 @@
+<section class="section" id="input">
+    <form class="container">
+        <div class="columns is-mobile is-centered is-multiline is-vcentered">
+            <div class="column is-12-touch">
+                <div class="field">
+                    <label class="label">Input CSV String</label>
+                    <div class="control">                       
+                        <textarea class="textarea is-code will-clear" id="data" name="data" autofocus="" placeholder="Enter CSV string here" rows="5" [(ngModel)]="fdCSV"></textarea>
+                        <div class="buttons has-addons is-vertical">
+                            <button mat-icon-button id="icon-button" color="primary">
+                                <mat-icon _class="mat-icon material-icons mat-icon-no-color">
+                                    content_copy</mat-icon>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-12">
+                <div class="field is-grouped is-grouped-centered">
+                    <div class="control">
+                        <label class="label">Output Format</label>
+                    </div>
+                    <div class="control">
+                        <div class="control">
+                            <div class="select is-fullwidth">
+                                <select id="jsontemplate" name="jsontemplate">
+                                    <option value="0">SQL Script</option>
+                                    <option value="1" selected="">C Sharp</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="control" style="width:350px;">
+                    </div>
+                    <div class="control">
+                        <button mat-raised-button color="primary" (click)="evaluateCSV()">Evaluate</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</section>
+
+<section class="section" id="input">
+    <form class="container">
+        <div class="columns is-mobile is-centered is-multiline is-vcentered">
+            <div class="column is-12-touch">
+                <div class="field">
+                    <label class="label">Formatted Data</label>
+                    <div class="control">                       
+                        <textarea class="textarea is-code will-clear" id="data" name="data" autofocus="" placeholder="Enter CSV string here" rows="5" readonly> {{cSharpString}}</textarea>
+                        <div class="buttons has-addons is-vertical">
+                            <button mat-icon-button id="icon-button" color="primary">
+                                <mat-icon _class="mat-icon material-icons mat-icon-no-color">
+                                    close</mat-icon>
+                            </button>
+                            <button mat-icon-button id="icon-button" color="primary">
+                                <mat-icon _class="mat-icon material-icons mat-icon-no-color">
+                                    content_copy</mat-icon>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</section>

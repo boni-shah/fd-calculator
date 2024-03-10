@@ -1,0 +1,26 @@
+.fd-card {
+  max-width: 80%;
+}
+
+.content {
+  display: flex;
+  margin: 32px auto 0px;
+  flex-direction: column;
+}
+
+.search-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 132px auto 90px;
+}
+
+input {
+  border: solid 1px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 6px 16px;
+  width: 100%;
+  max-width: 55%;
+  font-size: 16px;
+  line-height: 40px;
+}

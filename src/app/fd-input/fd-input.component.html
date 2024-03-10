@@ -1,0 +1,15 @@
+<div class="content" role="main">
+    <textarea cols="180" name="description" style="margin-top: 100px; min-height: 200px;" [(ngModel)]="fdCSV"
+        (keyup)="autoGrowTextZone($event)"></textarea>
+    <br>
+    <button mat-raised-button color="primary" (click)="evaluateCSV()">Evaluate</button>
+</div>
+
+<div class="icon-content" role="main">
+    <textarea cols="180" name="description" style="min-height: 200px; border: 2px solid black;"
+        readonly>{{cSharpString}}</textarea>
+    <button mat-icon-button id="icon-button" color="primary">
+        <mat-icon _class="mat-icon material-icons mat-icon-no-color">
+            content_copy</mat-icon>
+    </button>
+</div>

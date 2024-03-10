@@ -1,0 +1,29 @@
+.content {
+  display: flex;
+  margin: 82px auto 32px;
+  padding: 0 16px;
+  max-width: 960px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-content {
+  display: flex;
+  margin: 82px auto 32px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-content,
+#icon-button {
+  position: relative;
+  top: 0px;
+  right: 0px;
+}
+
+#icon-button {
+  position: absolute;
+  top: 15px;
+  right: 300px;
+  z-index: 10;
+}
